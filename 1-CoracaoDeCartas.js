@@ -18,7 +18,7 @@
   ou o número 0 se o jogo for impossível.
 */
 
-let m, cards;
+let mapa, cards;
 let nLinhas = 1;
 
 while (true) {
@@ -26,7 +26,7 @@ while (true) {
 
   if (nLinhas <= 0) break;
 
-  m = new Map();
+  mapa = new Map();
 
   cards = Array.from(new Array(3)).map(v => new Array(nLinhas));
 
@@ -48,51 +48,51 @@ function canWinWith(a, b, c) {
   s = s.concat(c + '0');
 
   if (a === b && b === c && c === nLinhas) {
-    m.set(s, 1);
+    mapa.set(s, 1);
     return true;
   }
 
-  let x = m.get(s);
+  let x = mapa.get(s);
 
   if (x > 0) {
     return x === 1 ? true : false;
   }
 
   if (a < nLinhas && cards[0][a] % 3 === 0 && canWinWith(a + 1, b, c)) {
-    m.set(s, 1);
+    mapa.set(s, 1);
     return true;
   }
 
   if (b < nLinhas && cards[1][b] % 3 === 0 && canWinWith(a, b + 1, c)) {
-    m.set(s, 1);
+    mapa.set(s, 1);
     return true;
   }
 
   if (c < nLinhas && cards[2][c] % 3 === 0 && canWinWith(a, b, c + 1)) {
-    m.set(s, 1);
+    mapa.set(s, 1);
     return true;
   }
 
   if (a < nLinhas && b < nLinhas && (cards[0][a] + cards[1][b]) % 3 == 0 && canWinWith(a + 1, b + 1, c)) {
-    m[s] = 1;
+    mapa[s] = 1;
     return true;
   }
 
   if (a < nLinhas && c < nLinhas && (cards[0][a] + cards[2][c]) % 3 == 0 && canWinWith(a + 1, b, c + 1)) {
-    m.set(s, 1);
+    mapa.set(s, 1);
     return true;
   }
   
   if (b < nLinhas && c < nLinhas && (cards[1][b] + cards[2][c]) % 3 == 0 && canWinWith(a, b + 1, c + 1)) {
-    m.set(s, 1);
+    mapa.set(s, 1);
     return true;
   }
 
   if (a < nLinhas && b < nLinhas && c < nLinhas && (cards[0][a] + cards[1][b] + cards[2][c]) % 3 == 0 && canWinWith(a + 1, b + 1, c + 1)) {
-    m.set(s, 1);
+    mapa.set(s, 1);
     return true;
   }
 
-  m.set(s, 2);
+  mapa.set(s, 2);
   return false;
 }
