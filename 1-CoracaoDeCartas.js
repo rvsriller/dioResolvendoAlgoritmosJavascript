@@ -16,7 +16,6 @@
   Saída
   Para cada instância, imprima uma linha contendo o número 1 se o jogador pode ganhar a instância do jogo 
   ou o número 0 se o jogo for impossível.
-
 */
 
 let m, cards;
@@ -28,6 +27,7 @@ while (true) {
   if (n <= 0) break;
 
   m = new Map();
+
   cards = Array.from(new Array(3)).map(v => new Array(n));
 
   for (let i = 0; i < n; i++) {
