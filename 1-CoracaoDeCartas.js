@@ -29,7 +29,7 @@ let nLinhas = 1;
 while (true) {
   nLinhas = parseInt(gets());
 
-  if (nLinhas <= 0) break;
+  if (nLinhas <= 0) break; //Flag de parada
 
   mapa = new Map();
 
