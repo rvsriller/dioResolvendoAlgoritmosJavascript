@@ -8,7 +8,6 @@
   seja múltiplo de 3. 
   
   O jogo é ganho quando todas as cartas forem removidas das pilhas. 
-
   Se alguma carta não puder ser removida, perde-se o jogo.
 
   Entrada
