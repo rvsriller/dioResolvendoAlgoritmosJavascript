@@ -1,10 +1,14 @@
 /*
   O coração das cartas, como Marcos apelidou o jogo, é individual e jogado com três pilhas, 
   inicialmente com o mesmo número de cartas. Cada carta tem um valor numérico inteiro de 0 até 9. 
+
   O jogador pode, a qualquer momento ver o valor de qualquer carta, mas só pode jogar com as 
   cartas que estão no topo das pilhas. Em cada rodada, o jogador pode remover qualquer combinação 
   de cartas que estejam no topo da pilha (pode escolher 1, 2 ou até 3 cartas) cuja soma dos valores 
-  seja múltiplo de 3. O jogo é ganho quando todas as cartas forem removidas das pilhas. 
+  seja múltiplo de 3. 
+  
+  O jogo é ganho quando todas as cartas forem removidas das pilhas. 
+
   Se alguma carta não puder ser removida, perde-se o jogo.
 
   Entrada
