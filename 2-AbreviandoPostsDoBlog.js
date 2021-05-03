@@ -11,9 +11,8 @@
   Em seguida, imprima um inteiro N, indicando o número de palavras em que foram escolhidas uma letra para a abreviação no texto. Nas próximas N linhas, imprima o seguinte padrão “C. = P”, onde C é a letra inicial e P é a palavra escolhida para tal letra. As linhas devem ser impressas em ordem crescente da letra inicial.
 */
 
-
+const alphabet = 'abcdefghijklmnopqrstuvwxyz'
 const regexPattern = /\b[a-z]{1,30}\b/g
-
 
 while (true) {
   let newSentence = ''
@@ -39,7 +38,6 @@ while (true) {
 
   const abbreviations = alphabet.split('').map(letter => {
     candidates = words.filter(word => word.word.match(new RegExp(`\\b${letter}\\w{2,}\\b`, 'g')))
-
     if (!candidates || candidates === null) return { save: 0 }
 
     return candidates.reduce((acc, curr) => {
@@ -49,15 +47,15 @@ while (true) {
 
     }, { save: 0 });
 
-  }).filter(el => el.save > 0)
+  }).filter(el => el.save > 0);
 
-  newSentence = input
+  newSentence = input;
   for (const abbr of abbreviations) {
-    newSentence = newSentence.replace(abbr.regexp, abbr.abbreviation)
+    newSentence = newSentence.replace(abbr.regexp, abbr.abbreviation);
   }
 
   //Output
   console.log(newSentence);
   console.log(abbreviations.length);
-  abbreviations.sort().map(({ legend }) => console.log(legend))
+  abbreviations.sort().map(({ legend }) => console.log(legend));
 }
