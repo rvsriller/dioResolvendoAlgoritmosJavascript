@@ -10,3 +10,6 @@
   cada cadeia de caracteres contém entre 1 e 50 caracteres inclusive.
  
 */
+
+const nCases = parseInt(gets());
+let output;
