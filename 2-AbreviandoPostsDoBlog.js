@@ -15,8 +15,8 @@ const alphabet = 'abcdefghijklmnopqrstuvwxyz'
 const regexPattern = /\b[a-z]{1,30}\b/g
 
 while (true) {
-  let newSentence = ''
-  const input = gets() 
+  let newSentence = '';
+  const input = gets();
 
 
   if (!input || input === '.') break;
@@ -32,7 +32,7 @@ while (true) {
     const save = trim * repeatations;
     const abbreviation = `${word[0]}.`;
     const legend = `${abbreviation} = ${word}`;
-    const regexp = new RegExp(`\\b${word}\\b`, 'g')
+    const regexp = new RegExp(`\\b${word}\\b`, 'g');
 
     return { word, repeatations, trim, save, abbreviation, legend, regexp };
 
