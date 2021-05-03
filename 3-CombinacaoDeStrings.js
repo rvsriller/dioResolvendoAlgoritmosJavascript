@@ -11,9 +11,9 @@
  
 */
 
-const nCases = parseInt(gets());
-let output;
+const nCases = parseInt(gets()); //Extrai a primeira entrada contendo o número de casos a serem processados
+let output; //Variável de saída
 
-for (let i = 1; i <= nCases; i++) {
-  
+for (let i = 1; i <= nCases; i++) { //Laço de repetição para percorrer as strings de cada caso
+  output = '';
 }
