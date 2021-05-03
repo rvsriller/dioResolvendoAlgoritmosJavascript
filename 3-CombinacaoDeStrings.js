@@ -20,5 +20,7 @@ for (let i = 1; i <= nCases; i++) { //Laço de repetição para percorrer as str
   
   const menorTamanho = Math.min(strA.length, strB.length) //Retorna o menor valor comparado (a menor string)
 
+  for (let j = 0; j < menorTamanho; j++) saida += `${strA[j]}${strB[j]}`; //Combinação de letras de cada string
+
 
 }
