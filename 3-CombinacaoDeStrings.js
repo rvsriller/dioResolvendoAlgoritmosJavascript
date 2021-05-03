@@ -22,9 +22,7 @@ for (let i = 1; i <= nCases; i++) { //Laço de repetição para percorrer as str
 
   for (let j = 0; j < menorTamanho; j++) saida += `${strA[j]}${strB[j]}`; //Combinação de letras de cada string
 
-  
   saida += strA.length > strB.length ? strA.substring(menorTamanho) : strB.substring(menorTamanho)  //Ordenando por menor tamanho
 
   console.log(saida); //Saída de cada caso
-
 }
