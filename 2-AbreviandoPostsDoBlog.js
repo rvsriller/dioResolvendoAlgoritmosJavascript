@@ -33,12 +33,14 @@ while (true) {
     const abbreviation = `${word[0]}.`
     const legend = `${abbreviation} = ${word}`
     const regexp = new RegExp(`\\b${word}\\b`, 'g')
-    return { word, repeatations, trim, save, abbreviation, legend, regexp }
-  }).filter(word => word.save > 0)
+
+    return { word, repeatations, trim, save, abbreviation, legend, regexp };
+    
+  }).filter(word => word.save > 0);
 
   const abbreviations = alphabet.split('').map(letter => {
-    candidates = words.filter(word => word.word.match(new RegExp(`\\b${letter}\\w{2,}\\b`, 'g')))
-    if (!candidates || candidates === null) return { save: 0 }
+    candidates = words.filter(word => word.word.match(new RegExp(`\\b${letter}\\w{2,}\\b`, 'g')));
+    if (!candidates || candidates === null) return { save: 0 };
 
     return candidates.reduce((acc, curr) => {
       return curr.save >= acc.save
