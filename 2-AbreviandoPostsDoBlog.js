@@ -13,7 +13,7 @@
 
 
 const regexPattern = /\b[a-z]{1,30}\b/g
-const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
 
 while (true) {
   let newSentence = ''
@@ -56,5 +56,8 @@ while (true) {
     newSentence = newSentence.replace(abbr.regexp, abbr.abbreviation)
   }
 
- 
+  //Output
+  console.log(newSentence);
+  console.log(abbreviations.length);
+  abbreviations.sort().map(({ legend }) => console.log(legend))
 }
