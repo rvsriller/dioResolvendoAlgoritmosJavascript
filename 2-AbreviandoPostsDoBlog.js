@@ -51,5 +51,10 @@ while (true) {
 
   }).filter(el => el.save > 0)
 
-  
+  newSentence = input
+  for (const abbr of abbreviations) {
+    newSentence = newSentence.replace(abbr.regexp, abbr.abbreviation)
+  }
+
+ 
 }
