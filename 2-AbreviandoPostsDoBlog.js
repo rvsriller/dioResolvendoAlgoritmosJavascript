@@ -37,5 +37,19 @@ while (true) {
     return { word, repeatations, trim, save, abbreviation, legend, regexp }
   }).filter(word => word.save > 0)
 
+  const abbreviations = alphabet.split('').map(letter => {
+    candidates = words.filter(word => word.word.match(new RegExp(`\\b${letter}\\w{2,}\\b`, 'g')))
 
+    if (!candidates || candidates === null) return { save: 0 }
+
+    return candidates.reduce((acc, curr) => {
+      return curr.save >= acc.save
+        ? curr
+        : acc
+
+    }, { save: 0 });
+
+  }).filter(el => el.save > 0)
+
+  
 }
