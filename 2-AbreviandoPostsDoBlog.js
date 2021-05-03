@@ -1,7 +1,8 @@
 /*
   Entrada
   Haverá diversos casos de teste. Cada caso de teste é composto de uma linha, contendo uma frase de até 10⁴ caracteres. 
-  A frase é composta de palavras e espaços em branco, e cada palavra é composta de letras minúsculas ('a'-'z'), e contém entre 1 e 30 caracteres cada.
+  A frase é composta de palavras e espaços em branco, e cada palavra é composta de letras minúsculas ('a'-'z'), 
+  e contém entre 1 e 30 caracteres cada.
 
   O último caso de teste é indicado quando a linha dada conter apenas um “.”, o qual não deverá ser processado.
 
