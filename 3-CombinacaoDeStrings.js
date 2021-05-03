@@ -12,13 +12,13 @@
 */
 
 const nCases = parseInt(gets()); //Extrai a primeira entrada contendo o número de casos a serem processados
-let output; //Variável de saída
+let saida; //Variável de saída
 
 for (let i = 1; i <= nCases; i++) { //Laço de repetição para percorrer as strings de cada caso
-  output = '';
+  saida = '';
   [strA, strB] = gets().split(' ');  //Extrai as duas cadeias de caracteres
   
-  const smallestLength = Math.min(strA.length, strB.length)
+  const menorTamanho = Math.min(strA.length, strB.length) //Retorna o menor valor comparado (a menor string)
 
 
 }
