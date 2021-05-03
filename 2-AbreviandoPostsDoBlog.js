@@ -11,8 +11,8 @@
   Em seguida, imprima um inteiro N, indicando o número de palavras em que foram escolhidas uma letra para a abreviação no texto. Nas próximas N linhas, imprima o seguinte padrão “C. = P”, onde C é a letra inicial e P é a palavra escolhida para tal letra. As linhas devem ser impressas em ordem crescente da letra inicial.
 */
 
-const alphabet = 'abcdefghijklmnopqrstuvwxyz'
-const regexPattern = /\b[a-z]{1,30}\b/g
+const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+const regexPattern = /\b[a-z]{1,30}\b/g;
 
 while (true) {
   let newSentence = '';
