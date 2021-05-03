@@ -13,3 +13,7 @@
 
 const nCases = parseInt(gets());
 let output;
+
+for (let i = 1; i <= nCases; i++) {
+  
+}
