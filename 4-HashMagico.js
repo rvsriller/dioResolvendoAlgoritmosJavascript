@@ -15,4 +15,8 @@ while (nCasos > 0) {
     continue;
   }
 
+  for (let i = 0; i < nLinhas; i++) {
+    linhas = [...linhas, gets()] 
+  }
+
 }
