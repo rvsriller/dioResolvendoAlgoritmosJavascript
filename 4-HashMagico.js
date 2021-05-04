@@ -24,7 +24,9 @@ while (nCasos > 0) {
       const posicaoAlfabeto = parseInt(curr, 36) - 10;
       const elementoEntrada = i;
 
+      return acc + posicaoAlfabeto + elementoEntrada + posicaoElemento
     }, 0)
   }
 
+ 
 }
