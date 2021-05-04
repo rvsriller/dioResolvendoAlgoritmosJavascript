@@ -10,4 +10,9 @@ while (nCasos > 0) {
   valor = 0
   nLinhas = parseInt(gets())
 
+  if (nLinhas < 1 || nLinhas > 100) {
+    for (let i = 0; i < nLinhas; i++) { gets(); } 
+    continue;
+  }
+
 }
