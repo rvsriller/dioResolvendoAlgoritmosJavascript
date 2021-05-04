@@ -19,4 +19,10 @@ while (nCasos > 0) {
     linhas = [...linhas, gets()] 
   }
 
+  for (const [i, line] of linhas.entries()) {
+    valor += line.match(regexLine).slice(0, 50).reduce((acc, curr, posicaoElemento, array) => {
+      
+    }, 0)
+  }
+
 }
