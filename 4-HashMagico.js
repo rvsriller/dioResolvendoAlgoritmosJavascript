@@ -4,4 +4,7 @@ let nLinhas = 0;
 let valor;
 let linhas;
 
+while (nCasos > 0) {
+  nCasos--
+  linhas = []
 }
