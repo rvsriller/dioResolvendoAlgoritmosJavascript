@@ -20,13 +20,16 @@ while (nCasos > 0) {
   }
 
   for (const [i, line] of linhas.entries()) {
-    valor += line.match(regexLine).slice(0, 50).reduce((acc, curr, posicaoElemento, array) => {
-      const posicaoAlfabeto = parseInt(curr, 36) - 10;
-      const elementoEntrada = i;
+    valor += 
+      line.match(regexLine).
+      slice(0, 50).
+      reduce((acc, curr, posicaoElemento, array) => {
+        const posicaoAlfabeto = parseInt(curr, 36) - 10;
+        const elementoEntrada = i;
 
-      return acc + posicaoAlfabeto + elementoEntrada + posicaoElemento
+        return acc + posicaoAlfabeto + elementoEntrada + posicaoElemento
     }, 0)
   }
 
- 
+  console.log(valor);
 }
