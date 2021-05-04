@@ -30,7 +30,7 @@ while (nCasos > 0) {
             const elementoEntrada = i;
 
             return acc + posicaoAlfabeto + elementoEntrada + posicaoElemento;
-        }, 0)
+        }, 0);
   }
   console.log(valor);
 }
