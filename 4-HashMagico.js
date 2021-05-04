@@ -18,7 +18,7 @@ while (nCasos > 0) {
   }
 
   for (let i = 0; i < nLinhas; i++) {
-    linhas = [...linhas, gets()] 
+    linhas = [...linhas, gets()]; 
   }
 
   for (const [i, line] of linhas.entries()) {
@@ -29,7 +29,7 @@ while (nCasos > 0) {
             const posicaoAlfabeto = parseInt(curr, 36) - 10;
             const elementoEntrada = i;
 
-            return acc + posicaoAlfabeto + elementoEntrada + posicaoElemento
+            return acc + posicaoAlfabeto + elementoEntrada + posicaoElemento;
         }, 0)
   }
   console.log(valor);
