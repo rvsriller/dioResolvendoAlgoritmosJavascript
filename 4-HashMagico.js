@@ -7,4 +7,7 @@ let linhas;
 while (nCasos > 0) {
   nCasos--
   linhas = []
+  valor = 0
+  nLinhas = parseInt(gets())
+
 }
