@@ -53,3 +53,11 @@ const operation = {
     output += getMostFrequentIn(columnValues) + '\n'
   }
 }
+
+const getMostFrequentIn = (values) => {
+
+  let n = values.length;
+
+  if (n == 0) return null;
+
+  let map = {}, most = values[0], freqCount = 1;
