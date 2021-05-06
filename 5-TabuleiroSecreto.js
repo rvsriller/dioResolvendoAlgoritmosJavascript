@@ -100,5 +100,11 @@ while (true) {
     X = parseInt(X)
     R = parseInt(R)
 
+    if (/[12]/.test(T)) {
+      if (X < 1 || X > N || R < 0 || R > 50) {
+        continue;
+      }
+    }
+
   }
 }
