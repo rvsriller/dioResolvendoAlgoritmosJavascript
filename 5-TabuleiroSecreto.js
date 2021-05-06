@@ -25,3 +25,6 @@
 
 */
 
+
+let input;
+const limit = Math.pow(10, 5);
