@@ -70,4 +70,9 @@ const getMostFrequentIn = (values) => {
     else
       map[el]++;
 
+    if (map[el] > freqCount) {
+      most = el;
+      freqCount = map[el];
+    }
+
 }
