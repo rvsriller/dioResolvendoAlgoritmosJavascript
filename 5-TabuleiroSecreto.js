@@ -28,3 +28,5 @@
 
 let input;
 const limit = Math.pow(10, 5);
+let T, X, R;
+var output = '';
