@@ -93,4 +93,6 @@ while (true) {
 
   if (N < 1 || N > limit || Q < 1 || N > limit) break;
 
+  let matrix = Array.from(Array(parseInt(N)), () => new Array(parseInt(N)).fill(0));
+
 }
