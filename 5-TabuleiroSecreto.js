@@ -43,14 +43,14 @@ const operation = {
     }
   },
   '3': function showMostFrequentAtLine(matrix, line) {
-    const lineValues = matrix[line - 1]
+    const lineValues = matrix[line - 1];
 
-    output += getMostFrequentIn(lineValues) + '\n'
+    output += getMostFrequentIn(lineValues) + '\n';
   },
   '4': function showMostFrequentAtColumn(matrix, col) {
-    const columnValues = matrix.map(line => line[col - 1])
+    const columnValues = matrix.map(line => line[col - 1]);
 
-    output += getMostFrequentIn(columnValues) + '\n'
+    output += getMostFrequentIn(columnValues) + '\n';
   }
 }
 
@@ -114,4 +114,5 @@ while (true) {
 
     operation[T](matrix, X, R);
   }
+  console.log(output);
 }
