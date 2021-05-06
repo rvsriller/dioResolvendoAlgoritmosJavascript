@@ -61,3 +61,13 @@ const getMostFrequentIn = (values) => {
   if (n == 0) return null;
 
   let map = {}, most = values[0], freqCount = 1;
+
+  for (let i = 0; i < n; i++) {
+    let el = values[i];
+
+    if (map[el] == null)
+      map[el] = 1;
+    else
+      map[el]++;
+
+}
