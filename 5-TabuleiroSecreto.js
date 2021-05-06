@@ -95,4 +95,10 @@ while (true) {
 
   let matrix = Array.from(Array(parseInt(N)), () => new Array(parseInt(N)).fill(0));
 
+  for (let index = 0; index < Q; index++) {
+    let [T, X, R] = gets().split(/[ ]+/g) 
+    X = parseInt(X)
+    R = parseInt(R)
+
+  }
 }
