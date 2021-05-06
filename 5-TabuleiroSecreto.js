@@ -30,3 +30,10 @@ let input;
 const limit = Math.pow(10, 5);
 let T, X, R;
 var output = '';
+
+const operation = {
+  '1': function fillLine(matrix, line, num) {
+    for (let index = 0; index < matrix.length; index++) {
+      matrix[line - 1][index] = num;
+    }
+  }
