@@ -106,5 +106,11 @@ while (true) {
       }
     }
 
+    if (/[34]/.test(T)) {
+      if (X > N || X < 0) {
+        continue;
+      }
+    }
+
   }
 }
