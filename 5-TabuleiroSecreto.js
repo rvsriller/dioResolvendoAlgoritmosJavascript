@@ -80,3 +80,12 @@ const getMostFrequentIn = (values) => {
   }
   return most;
 }
+
+while (true) {
+  input = gets() 
+
+  if (!input || input === '') break;
+
+  let [N, Q] = input.match(/\d+/g);
+
+}
