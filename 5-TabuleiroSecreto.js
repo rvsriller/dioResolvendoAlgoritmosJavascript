@@ -112,5 +112,6 @@ while (true) {
       }
     }
 
+    operation[T](matrix, X, R);
   }
 }
