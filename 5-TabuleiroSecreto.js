@@ -88,4 +88,9 @@ while (true) {
 
   let [N, Q] = input.match(/\d+/g);
 
+  N = parseInt(N);
+  Q = parseInt(Q);
+
+  if (N < 1 || N > limit || Q < 1 || N > limit) break;
+
 }
