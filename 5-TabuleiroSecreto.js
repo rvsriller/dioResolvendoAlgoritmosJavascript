@@ -42,3 +42,14 @@ const operation = {
       matrix[index][col - 1] = num;
     }
   },
+  '3': function showMostFrequentAtLine(matrix, line) {
+    const lineValues = matrix[line - 1]
+
+    output += getMostFrequentIn(lineValues) + '\n'
+  },
+  '4': function showMostFrequentAtColumn(matrix, col) {
+    const columnValues = matrix.map(line => line[col - 1])
+
+    output += getMostFrequentIn(columnValues) + '\n'
+  }
+}
