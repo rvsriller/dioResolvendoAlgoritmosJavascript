@@ -36,4 +36,9 @@ const operation = {
     for (let index = 0; index < matrix.length; index++) {
       matrix[line - 1][index] = num;
     }
-  }
+  },
+  '2': function fillColumn(matrix, col, num) {
+    for (let index = 0; index < matrix.length; index++) {
+      matrix[index][col - 1] = num;
+    }
+  },
